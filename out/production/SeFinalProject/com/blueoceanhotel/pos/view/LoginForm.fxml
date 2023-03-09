@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="loginboardContext" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.blueoceanhotel.pos.controller.CustomerFormController">
+   <children>
+      <Label layoutX="14.0" layoutY="22.0" text="Please Login Your Account">
+         <font>
+            <Font name="Arial Bold" size="32.0" />
+         </font>
+      </Label>
+      <Separator layoutX="14.0" layoutY="75.0" prefHeight="0.0" prefWidth="580.0" />
+      <JFXTextField focusColor="#1140cd" labelFloat="true" layoutX="14.0" layoutY="135.0" prefHeight="25.0" prefWidth="570.0" unFocusColor="#46d309" />
+      <Label layoutX="14.0" layoutY="110.0" text="Email" textFill="#2614e8">
+         <font>
+            <Font name="Arial Bold" size="22.0" />
+         </font>
+      </Label>
+      <Label layoutX="14.0" layoutY="215.0" text="Password" textFill="#1308da">
+         <font>
+            <Font name="Arial Bold" size="21.0" />
+         </font>
+      </Label>
+      <JFXPasswordField layoutX="14.0" layoutY="254.0" prefHeight="25.0" prefWidth="570.0" unFocusColor="#28cf08" />
+      <Button layoutX="360.0" layoutY="323.0" mnemonicParsing="false" text="Next">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="452.0" layoutY="323.0" mnemonicParsing="false" onAction="#backOnAction" text="Back">
+         <font>
+            <Font name="Arial Bold" size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>
